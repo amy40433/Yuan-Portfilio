@@ -1,0 +1,488 @@
+@media (max-width:1500px) {
+    .introduction {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 30px;
+        padding: 25px;
+    }
+
+    .introduction-bg .wrapper {
+        padding-top: 200px;
+        padding-bottom: 300px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:1400px) {
+
+    .portfolio-bg {
+        margin-top: 40px;
+    }
+
+    .portfolio-gallery .title {
+        margin-left: 15px;
+    }
+
+    .portfolio-bg .decorate {
+        width: 90%;
+        height: 100px;
+        position: relative;
+    }
+
+    .left-menu ul {
+        margin-top: 20px;
+    }
+
+    .gallery-tab {
+        width: 88%;
+        margin-top: 0px;
+    }
+
+    .grid-sizer {
+        width: calc(100% / 3 - 15px) !important;
+    }
+
+    .grid-item {
+        width: calc(100% / 3 - 15px) !important;
+    }
+
+    .portfolio-gallery {
+        margin-top: 20px;
+    }
+
+    .grid-graphic-item1,
+    .grid-graphic-item2 {
+        width: calc(100% / 2 - 15px) !important;
+    }
+}
+
+@media (max-width:1300px) {
+    .about-int {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .int-icon-bg {
+        position: relative;
+    }
+
+    .int-icon-inside {
+        top: -230px;
+        bottom: 0;
+    }
+
+    .about-text,
+    .work-int {
+        margin: 0px 30px;
+    }
+
+    .about-hr {
+        margin: 0px;
+    }
+
+}
+
+@media (max-width:1240px) {
+    .introduction {
+        width: 45%;
+    }
+
+    .inside-bg {
+        background: url(/src/assets/images/bg02.png) no-repeat right bottom, url(/src/assets/images/bg01.png) no-repeat center top 370px;
+    }
+
+    .gallery-tab {
+        width: 86%;
+    }
+
+
+}
+
+@media (max-width:1070px) {
+    .introduction .title {
+        font-size: 48px;
+    }
+
+    .introduction .title p:nth-of-type(2) {
+        margin-top: -40px;
+    }
+
+    .int-icon {
+        display: none;
+    }
+
+    .int-icon1 {
+        display: block;
+    }
+
+    .introduction-bg .wrapper {
+        padding-top: 150px;
+    }
+
+    .introduction .content {
+        padding: 10px 0px 35px 0px;
+    }
+
+    .introduction .bt {
+        margin-top: 40px;
+    }
+
+    .introduction-bg {
+        background-position: top -20px right -90px;
+    }
+
+    .gallery-tab {
+        width: 84%;
+    }
+}
+
+@media (max-width:990px) {
+    .skill-bg .wrapper {
+        flex-wrap: wrap
+    }
+
+    .skill,
+    .skill-image {
+        width: 100%;
+    }
+
+    .skill-image {
+        margin: 0px 25px;
+    }
+
+    .tab-list {
+        flex-wrap: wrap;
+    }
+
+    .tab-list li div {
+        height: auto;
+    }
+
+    .gallery-tab {
+        width: 83%;
+    }
+
+    .grid-sizer {
+        width: calc(100% / 2 - 15px) !important;
+    }
+
+    .grid-item {
+
+        width: calc(100% / 2 - 15px) !important;
+    }
+
+}
+
+@media (max-width:850px) {
+    .introduction-bg .wrapper {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .introduction-bg {
+        background: none;
+        overflow: hidden
+    }
+
+    .introduction-bg-rwd {
+        display: flex;
+        margin-top: -330px;
+        margin-right: -50px;
+        position: relative;
+        z-index: -1;
+        justify-content: flex-end;
+    }
+
+    .introduction {
+        width: 100%;
+    }
+
+    .introduction .title {
+        line-height: 65px;
+        padding: 0px 20px;
+    }
+
+    .introduction .title p:nth-of-type(2) {
+        color: #ffffff;
+        margin-top: 0px;
+    }
+
+    .introduction .title br {
+        display: block;
+    }
+
+    .introduction .content-block {
+        background: rgba(255, 255, 255, 0.8);
+        width: 60%;
+        margin-top: -200px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: auto;
+        box-shadow: 0px 10px 10px -5px rgba(62, 58, 57, 0.2);
+    }
+
+    .introduction .content {
+        padding: 10px 0px 25px 0px;
+    }
+
+    .introduction .bt {
+        margin-top: 25px;
+    }
+
+    .introduction .content p:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    .int-icon {
+        display: block;
+        position: absolute;
+        top: 650px;
+        left: 4%;
+    }
+
+    .skill-bg .wrapper {
+        padding-bottom: 40px;
+    }
+
+    .portfolio-home .bt {
+        padding: 40px 0px;
+    }
+
+    .left-menu ul>li {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .menu3 ul>li {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .left-menu a,
+    .menu3 a {
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menu3 ul>li:nth-of-type(odd) {
+        margin-left: 0;
+    }
+
+    .menu3 ul>li:nth-of-type(even) {
+        margin-right: 0;
+    }
+
+    .portfolio {
+        margin-top: 20px;
+    }
+
+    .portfolio-gallery {
+        flex-direction: column;
+        margin: 20px 10px 0px 10px
+    }
+
+    .portfolio-gallery .title {
+        width: auto;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .portfolio-gallery .title p br {
+        display: none;
+    }
+
+    .portfolio-gallery .title img:nth-of-type(1) {
+        display: none;
+    }
+
+    .portfolio-gallery .title img:nth-of-type(2) {
+        display: block;
+    }
+
+    .portfolio-gallery .title p {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .gallery-tab {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width:750px) {
+    .about-img>img {
+        width: 100%;
+    }
+
+    .about-bg {
+        margin-top: 30px;
+    }
+
+    .int-icon-inside {
+        top: -190px;
+    }
+}
+
+@media (max-width:665px) {
+    .introduction-bg .wrapper {
+        padding-top: 0px;
+    }
+
+    .introduction-bg-rwd {
+        margin-top: -60px;
+        margin-left: -25px;
+    }
+
+    .introduction-bg-rwd img {
+        width: 100%;
+    }
+
+    .introduction .title br {
+        display: none;
+    }
+
+    .introduction .title {
+        padding: 0px;
+    }
+
+    .introduction .title p:nth-of-type(2) {
+        margin-top: -10px;
+        padding-left: 30px;
+        text-align: right;
+        color: #2965b0;
+    }
+
+    .introduction .content-block {
+        width: 100%;
+        margin-top: -60px;
+    }
+
+    .int-icon {
+        top: 170px;
+        left: 8%;
+    }
+
+    .skill-image {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .skill-image ul {
+        width: 100%;
+    }
+
+    .skill-image .right-col {
+        margin-top: 0px;
+    }
+
+    .skill-image ul>li {
+        flex-direction: row;
+        padding: 20px;
+        margin: 12px;
+    }
+
+    .skill-image li span {
+        padding-left: 20px;
+    }
+
+    .tab-header {
+        padding: 0px 15px;
+    }
+
+    .tab-header li {
+        width: calc(100% / 2);
+        padding-bottom: 10px;
+    }
+
+    .portfolio-home .title {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width:575px) {
+    .about-text .title>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-text .title>div>span:nth-of-type(2) {
+        margin-left: 0;
+        margin-top: -12px;
+    }
+
+    .about-text ul li {
+        flex-direction: column;
+    }
+
+    .about-text ul .data {
+        margin-top: 5px;
+    }
+
+    .about-text .title>div>span:nth-of-type(1) {
+        font-size: 28px;
+    }
+
+    .about-text,
+    .work-int {
+        margin: 0px 15px;
+    }
+
+    .about-text ul li {
+        font-size: 20px;
+    }
+
+    .skill-image {
+        margin: 0px 15px;
+    }
+
+
+}
+
+@media (max-width:475px) {
+    .introduction .title {
+        font-size: 42px;
+    }
+
+    .introduction .title p:nth-of-type(2) {
+        margin-top: -20px;
+    }
+
+    .int-icon {
+        width: 120px;
+        top: 130px;
+    }
+
+    .int-icon01 img,
+    .int-icon02 img {
+        width: 120px;
+    }
+
+    .grid-sizer {
+        width: 100% !important;
+    }
+
+    .grid-item {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .gallery-tab {
+        margin-top: 20px;
+    }
+
+    .menu3 ul {
+        flex-direction: column;
+    }
+
+    .menu3 ul>li {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+}
