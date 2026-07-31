@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <!-- 前端程式 -->
-                    <div class="gallery-tab" v-show="currentTab === 3">
+                    <div class="gallery-tab tab-3" v-show="currentTab === 3">
                         <div class="font-end" v-for="(item, index) in frontEnd" :key="index" >
                             <router-link to="/shopView" >
                                 <img :src="item.src" :alt="item.alt">
@@ -134,6 +134,7 @@ import portfolioTitle from '@/assets/images/portfolio_title.png'
 import portfolioTitleRwd from '@/assets/images/portfolio_title-.png'
 import { illustration, graphic, logo, packages, poster, website, frontEnd } from '@/portfolioImage'
 import { ref, computed, onMounted, nextTick, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import Masonry from 'masonry-layout'
 import imagesLoaded from 'imagesloaded'
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
@@ -142,6 +143,7 @@ import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css';
 
 const currentTab = ref(0)
+const route = useRoute()
 const currentTabMenu3 = ref(0)
 const leftMenu = [
     { title: '插畫設計', src: new URL('@/assets/images/skill01.png', import.meta.url).href },
@@ -161,9 +163,22 @@ const titleWithBreaks = computed(() => {
 let lightbox;
 
 onMounted(() => {
-    initMasonry();
-    initLightbox();
+    nextTick(() => {
+        initMasonry()
+        initLightbox()
+    })
 })
+
+watch(
+    () => route.hash,
+    () => {
+        setTabFromHash()
+    },
+    {
+        immediate: true
+    }
+)
+
 
 watch([currentTab, currentTabMenu3], () => {
     nextTick(() => {
@@ -175,6 +190,23 @@ watch([currentTab, currentTabMenu3], () => {
 
     });
 });
+
+function setTabFromHash() {
+    const tabMap = {
+        '#illustration': 0,
+        '#graphic': 1,
+        '#website': 2,
+        '#frontend': 3
+    }
+
+    if (tabMap[route.hash] !== undefined) {
+        currentTab.value = tabMap[route.hash]
+    } else {
+        currentTab.value = 0
+    }
+}
+
+
 
 function initMasonry() {
     let grid;

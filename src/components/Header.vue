@@ -48,10 +48,10 @@
                         <router-link to="/portfolio" 
                             exact-active-class="menuActive" @click="closeMenu"><span>Portfolio</span><span>作品集</span></router-link>
                         <ul class="sub-sub">
-                            <li><a href="#">插畫設計</a></li>
-                            <li><a href="#">平面設計</a></li>
-                            <li><a href="#">網頁設計</a></li>
-                            <li><a href="#">程式設計</a></li>
+                            <li><router-link to="/portfolio#illustration" exact-active-class="menuActive" @click="closeMenu">插畫設計</router-link></li>
+                            <li><router-link to="/portfolio#graphic" exact-active-class="menuActive" @click="closeMenu">平面設計</router-link></li>
+                            <li><router-link to="/portfolio#website" exact-active-class="menuActive" @click="closeMenu">網頁設計</router-link></li>
+                            <li><router-link to="/portfolio#frontend" exact-active-class="menuActive" @click="closeMenu">程式設計</router-link></li>
                         </ul>
                     </li>
                     <!-- <li>
