@@ -308,7 +308,7 @@ const portfolioImages = {
             width: 1920,
             height: 1920,
         },
-                {
+        {
             src: new URL('@/assets/portfolio/website14.jpg', import.meta.url).href,
             alt: '南投縣政府衛生局',
             width: 1920,
@@ -332,7 +332,7 @@ const portfolioImages = {
             width: 1920,
             height: 1920,
         },
-                {
+        {
             src: new URL('@/assets/portfolio/website18.jpg', import.meta.url).href,
             alt: '彰化縣議會',
             width: 1920,
@@ -355,7 +355,7 @@ const portfolioImages = {
             alt: '彰化縣鹿港鎮公所',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website22.jpg', import.meta.url).href,
             alt: '雲林輔具中心 - 雲林智慧守護網',
             width: 1920,
@@ -372,7 +372,7 @@ const portfolioImages = {
             alt: '臺南市政府文化局 - 活動網',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website25.jpg', import.meta.url).href,
             alt: '臺南市政府文化局 - 活動網',
             width: 1920,
@@ -389,7 +389,7 @@ const portfolioImages = {
             alt: '高雄文學資料庫',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website28.jpg', import.meta.url).href,
             alt: '高雄市立圖書館 - 國際繪本中心',
             width: 1920,
@@ -406,7 +406,7 @@ const portfolioImages = {
             alt: '空軍航空技術學院',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website31.jpg', import.meta.url).href,
             alt: '六堆客家文化園區 - 志工專區',
             width: 1920,
@@ -423,7 +423,7 @@ const portfolioImages = {
             alt: '國立澎湖科技大學 - 人文暨管理學院',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website34.jpg', import.meta.url).href,
             alt: '國立澎湖科技大學 - 食品科學系',
             width: 1920,
@@ -441,12 +441,12 @@ const portfolioImages = {
             width: 1920,
             height: 1920,
         },
-                {
+        {
             src: new URL('@/assets/portfolio/website37.jpg', import.meta.url).href,
             alt: '國立澎湖科技大學 - 海洋資源暨工程學院',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website38.jpg', import.meta.url).href,
             alt: '國立澎湖科技大學 - 資訊工程系',
             width: 1920,
@@ -458,12 +458,12 @@ const portfolioImages = {
             width: 1920,
             height: 1920,
         },
-                {
+        {
             src: new URL('@/assets/portfolio/website40.jpg', import.meta.url).href,
             alt: '澎湖國家海洋地質公園',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website41.jpg', import.meta.url).href,
             alt: '韋昕科技有限公司',
             width: 1920,
@@ -475,12 +475,12 @@ const portfolioImages = {
             width: 1920,
             height: 1920,
         },
-                {
+        {
             src: new URL('@/assets/portfolio/website43.jpg', import.meta.url).href,
             alt: '學校網站',
             width: 1920,
             height: 1920,
-        },        {
+        }, {
             src: new URL('@/assets/portfolio/website44.jpg', import.meta.url).href,
             alt: '學校網站',
             width: 1920,
@@ -490,10 +490,10 @@ const portfolioImages = {
     ],
     frontEnd: [
         {
-            src: new URL('@/assets/portfolio/illustration01.jpg', import.meta.url).href,
-            alt: '酪印-菜單DM',
-            width: 2480,
-            height: 1920,
+            src: 'src/assets/portfolio/frontEnd01.jpg',
+            alt: '甜點計算工具',
+            resolution: '建議解析度 460×1080px',
+            link: 'https://basque-helper-demo.vercel.app/today',
         },
     ]
 }

@@ -98,30 +98,17 @@
                     </div>
                     <!-- 前端程式 -->
                     <div class="gallery-tab tab-3" v-show="currentTab === 3">
-                        <div class="font-end" v-for="(item, index) in frontEnd" :key="index" >
-                            <router-link to="/shopView" >
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item font-end " v-for="(item, index) in frontEnd" :key="index">
+                            <a :href="item.link" target="_blank" rel="noopener noreferrer">
                                 <img :src="item.src" :alt="item.alt">
                                 <span>{{ item.alt }}</span>
-                            </router-link>
-                            <!-- <a :href="item.src">
-                                <img :src="item.src" :alt="item.alt">
-                                <span>{{ item.alt }}</span>
-                            </a> -->
+                                <small>{{ item.resolution }}</small>
+                            </a>
+
                         </div>
 
                     </div>
-
-
-                    <!-- <div class="gallery-tab tab-3" v-show="currentTab === 3">
-                        <div class="grid-sizer"></div>
-                        <div class="grid-item" v-for="(item, index) in frontEnd" :key="index"
-                            :class="`grid-five-item`">
-                            <a :href="item.src" :data-pswp-width="item.width" :data-pswp-height="item.height">
-                                <img :src="item.src" :alt="item.alt">
-                                <span>{{ item.alt }}</span>
-                            </a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
