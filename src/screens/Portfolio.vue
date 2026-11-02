@@ -102,8 +102,10 @@
                         <div class="grid-item font-end " v-for="(item, index) in frontEnd" :key="index">
                             <a :href="item.link" target="_blank" rel="noopener noreferrer">
                                 <img :src="item.src" :alt="item.alt">
-                                <span>{{ item.alt }}</span>
-                                <small>{{ item.resolution }}</small>
+                                <span>{{ item.alt }}
+                                    <small>{{ item.resolution }}</small>
+                                </span>
+                                
                             </a>
 
                         </div>
@@ -215,6 +217,8 @@ function initMasonry() {
 
 }
 function initLightbox() {
+    // 前端程式不需要 PhotoSwipe圖片放大
+    if (currentTab.value === 3) return;
     let gallerySelector;
     if (currentTab.value === 1) {
         gallerySelector = `.subtab-${currentTabMenu3.value}`
