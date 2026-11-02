@@ -490,7 +490,7 @@ const portfolioImages = {
     ],
     frontEnd: [
         {
-            src: 'src/assets/portfolio/frontEnd01.jpg',
+            src: new URL('./assets/portfolio/frontEnd01.jpg', import.meta.url).href,
             alt: '甜點計算工具',
             resolution: '建議解析度 460×1080px',
             link: 'https://basque-helper-demo.vercel.app/today',
